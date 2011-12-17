@@ -1,6 +1,13 @@
 Do I really need a readme for this?
 ===================================
 
-Nope.
+Completed:
+  
+  * Ruby
+    * Day 1
+  * Io
+    * Day 1
+    * Day 2
+    * Day 3
 
 -->Jake
