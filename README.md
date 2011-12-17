@@ -5,6 +5,7 @@ Completed:
   
   * Ruby
     * Day 1
+    * Day 2
   * Io
     * Day 1
     * Day 2
