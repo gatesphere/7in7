@@ -44,12 +44,7 @@ class RubyCsv # no inheritance! You can mix it in
 end
 
 class CsvRow
-  def method_missing name, *args
-    key = name.to_s
-    idx = csv.headers.index(key)
-    self[idx]
-  end
-end
+  
 
 csv = RubyCsv.new
 csv.each {|row| puts one}
