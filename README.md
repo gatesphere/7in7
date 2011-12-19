@@ -6,7 +6,7 @@ Completed:
   * Ruby
     * Day 1
     * Day 2
-    * Day 3 (as much as I'm going to get done...)
+    * Day 3
   * Io
     * Day 1
     * Day 2

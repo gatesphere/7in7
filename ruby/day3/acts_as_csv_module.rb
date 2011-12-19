@@ -7,7 +7,6 @@ module ActsAsCsv
   module ClassMethods
     def acts_as_csv
       include InstanceMethods
-      include Enumerable
     end
   end
   
@@ -20,7 +19,7 @@ module ActsAsCsv
       @headers = file.gets.chomp.split(', ')
       
       file.each do |row|
-        @csv_contents << row.chomp.split(', ')
+        @csv_contents.push(CsvRow.new(row.chomp.split(', '), @headers))
       end
     end
     
@@ -30,12 +29,12 @@ module ActsAsCsv
       read
     end
     
-    def each
-      @csv_contents.each(&block)
+    def each(&block)
+      @csv_contents.each do |row|
+        block.call row
+      end
     end  
-    
   end
-  
 end
 
 class RubyCsv # no inheritance! You can mix it in
@@ -45,11 +44,27 @@ end
 
 class CsvRow
   def method_missing name, *args
-    key = name.to_s
-    idx = csv.headers.index(key)
-    self[idx]
+    num = nil
+    i = 0
+    while i < @headers.length
+      num = i if name.to_s == @headers[i].to_s
+      i = i + 1
+    end
+    
+    if num.nil?
+      nil
+    else
+      @row[num]
+    end
+  end
+    
+  attr_accessor :row
+  
+  def initialize(row_array, headers)
+    @row = row_array
+    @headers = headers
   end
 end
 
 csv = RubyCsv.new
-csv.each {|row| puts one}
+csv.each {|row| puts row.one}
