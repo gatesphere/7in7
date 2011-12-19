@@ -44,17 +44,12 @@ end
 
 class CsvRow
   def method_missing name, *args
-    num = nil
-    i = 0
-    while i < @headers.length
-      num = i if name.to_s == @headers[i].to_s
-      i = i + 1
-    end
+    idx = @headers.index(name.to_s)
     
-    if num.nil?
+    if idx.nil?
       nil
     else
-      @row[num]
+      @row[idx]
     end
   end
     
