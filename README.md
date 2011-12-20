@@ -3,13 +3,15 @@ Do I really need a readme for this?
 
 Completed:
   
-  * Ruby
+  1. Ruby
     * Day 1
     * Day 2
     * Day 3
-  * Io
+  2. Io
     * Day 1
     * Day 2
     * Day 3
-
+  3. Prolog
+    * Day 1
+    
 -->Jake
