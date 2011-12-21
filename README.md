@@ -13,5 +13,6 @@ Completed:
     * Day 3
   3. Prolog
     * Day 1
+    * Day 2
     
 -->Jake
