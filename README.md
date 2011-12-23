@@ -17,5 +17,6 @@ Completed:
     * Day 3
   4. Scala
     * Day 1
+    * Day 2
     
 -->Jake
