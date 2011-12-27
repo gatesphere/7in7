@@ -21,5 +21,6 @@ Completed:
     * Day 3
   5. Erlang
     * Day 1
+    * Day 2
   
 -->Jake
