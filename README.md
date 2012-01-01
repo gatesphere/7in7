@@ -25,5 +25,6 @@ Completed:
     * Day 3
   6. Clojure
     * Day 1
+    * Day 2
     
 -->Jake
