@@ -27,5 +27,7 @@ Completed:
     * Day 1
     * Day 2
     * Day 3
-  
+  7. Haskell
+    * Day 1
+    
 -->Jake
