@@ -1,5 +1,5 @@
-Do I really need a readme for this?
-===================================
+Seven Languages in Seven Weeks, by Bruce A. Tate
+================================================
 
 Completed:
   
@@ -29,5 +29,6 @@ Completed:
     * Day 3
   7. Haskell
     * Day 1
+    * Day 2
     
 -->Jake
