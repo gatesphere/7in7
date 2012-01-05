@@ -30,5 +30,8 @@ Completed:
   7. Haskell
     * Day 1
     * Day 2
+    * Day 3
     
+It's been fun, and wow have I learned a lot.  Influences from Prolog, Erlang, Clojure and Haskell have entered into my ideas for [jedi](https://github.com/gatesphere/jedi).
+
 -->Jake
